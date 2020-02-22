@@ -1,7 +1,6 @@
 import java.util.UUID;
 
 class Calculator {
-    Trashed
 
     Calculator(){
     // Empty Constructor

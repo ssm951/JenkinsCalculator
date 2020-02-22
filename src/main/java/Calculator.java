@@ -3,7 +3,7 @@ import java.util.UUID;
 class Calculator {
 
     Calculator(){
-
+    // Empty Constructor
     }
 
     int add(int a , int b){
@@ -60,9 +60,8 @@ class Calculator {
      */
     String intToBinaryNumber(int n){
         StringBuilder binaryValue = new StringBuilder();
-
         do {
-            binaryValue.append(Integer.toString(n%2));
+            binaryValue.append(n % 2);
             n /=2;
         } while (n != 0);
         return binaryValue.reverse().toString();

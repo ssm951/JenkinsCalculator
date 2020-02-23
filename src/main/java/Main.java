@@ -6,28 +6,29 @@ public class Main {
         System.out.println("Welcome to the Not Normal Calculator");
         System.out.println("Type \"help\" for help. \"exit\" to terminate calculator");
         while(true) {
-            System.out.println("Enter a command: ");
+            System.out.print("Enter a command: ");
             Scanner scan = new Scanner(System.in);
             switch (scan.next()) {
                 case "add":
-                    calc.add(scan.nextInt(), scan.nextInt());
+                    System.out.println(calc.add(scan.nextInt(), scan.nextInt()));
                     break;
                 case "subtract":
-                    calc.subtract(scan.nextInt(), scan.nextInt());
+                    System.out.println(calc.subtract(scan.nextInt(), scan.nextInt()));
                     break;
                 case "multiply":
-                    calc.multiply(scan.nextInt(), scan.nextInt());
+                    System.out.println(calc.multiply(scan.nextInt(), scan.nextInt()));
                     break;
                 case "divide":
-                    calc.divide(scan.nextInt(), scan.nextInt());
+                    System.out.println(calc.divide(scan.nextInt(), scan.nextInt()));
                     break;
                 case "fibo":
-                    calc.fibonacciNumberFinder(scan.nextInt());
+                    System.out.println(calc.fibonacciNumberFinder(scan.nextInt()));
                     break;
                 case "binary":
-                    calc.intToBinaryNumber(scan.nextInt());
+                    System.out.println(calc.intToBinaryNumber(scan.nextInt()));
                     break;
                 case "exit":
+                    System.out.println("Exiting.");
                     System.exit(0);
                     break;
                 default:
